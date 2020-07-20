@@ -1,0 +1,18 @@
+#header {
+display: flex;
+justify-content: space-between;
+align-items: baseline;
+font-family: "Amatic SC";
+font-weight: 700;
+padding: 1.5rem;
+border-bottom: 3px solid #595959;
+h1 {
+font-size: 28px;
+}
+.menu ul {
+   display: flex;
+   li {
+      padding-left: 1rem;
+   }
+   }
+}
