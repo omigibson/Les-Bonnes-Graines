@@ -1,0 +1,12 @@
+#courses {
+   display: flex;
+   justify-content: space-around;
+   article {
+      width: calc(100% / 3);
+      padding: 1rem;
+      img {
+      width: 100%;
+      height: auto;
+      }
+   }
+}

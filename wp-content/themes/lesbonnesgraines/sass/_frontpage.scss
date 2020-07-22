@@ -1,0 +1,16 @@
+.description-text {
+   background-color: white;
+   padding: 1rem;
+}
+.latest-courses {
+   display: flex;
+   background-color: #D9C2AD;
+   padding: 1rem;
+   article {
+      width: calc((100% - 2rem) / 3);
+      padding: 0 .5rem;
+   }
+   a:focus, a:hover {
+      color: #558C03;
+   }
+}

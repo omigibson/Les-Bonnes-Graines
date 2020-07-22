@@ -13,7 +13,7 @@ function lesbonnesgraines_setup() {
 add_action( 'wp_enqueue_scripts', 'lesbonnesgraines_load_scripts' );
 function lesbonnesgraines_load_scripts() {
    wp_enqueue_style( 'lesbonnesgraines-style', get_stylesheet_uri() );
-   wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Open+Sans:wght@400;700&display=swap', false );
+   wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Open+Sans:wght@400;700&display=swap', [], null );
    wp_enqueue_script( 'jquery' );
 }
 add_action( 'wp_footer', 'lesbonnesgraines_footer_scripts' );
@@ -115,3 +115,36 @@ function lesbonnesgraines_comment_count( $count ) {
       return $count;
    }
 }
+
+/********
+Change default post label
+**********/
+
+function change_post_label() {
+    global $menu;
+    global $submenu;
+    $menu[5][0] = 'Courses';
+    $submenu['edit.php'][5][0] = 'Courses';
+    $submenu['edit.php'][10][0] = 'Add Course';
+    $submenu['edit.php'][16][0] = 'Tags';
+}
+function change_post_object() {
+    global $wp_post_types;
+    $labels = &$wp_post_types['post']->labels;
+    $labels->name = 'Courses';
+    $labels->singular_name = 'Course';
+    $labels->add_new = 'Add Course';
+    $labels->add_new_item = 'Add Course';
+    $labels->edit_item = 'Edit Course';
+    $labels->new_item = 'Course';
+    $labels->view_item = 'View Course';
+    $labels->search_items = 'Search Courses';
+    $labels->not_found = 'No Courses found';
+    $labels->not_found_in_trash = 'No Courses found in Trash';
+    $labels->all_items = 'All Courses';
+    $labels->menu_name = 'Courses';
+    $labels->name_admin_bar = 'Courses';
+}
+
+add_action( 'admin_menu', 'change_post_label' );
+add_action( 'init', 'change_post_object' );
