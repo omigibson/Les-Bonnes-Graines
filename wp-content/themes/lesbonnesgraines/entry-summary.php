@@ -1,9 +1,11 @@
 <div class="entry-summary">
-   <?php if ( has_post_thumbnail() ) : ?>
-      <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail(); ?></a>
-   <?php endif; ?>
-   <?php the_excerpt(); ?>
-   <?php if ( is_search() ) { ?>
-      <div class="entry-links"><?php wp_link_pages(); ?></div>
-   <?php } ?>
+   <a href="<?php the_permalink(); ?>">
+      <?php if ( has_post_thumbnail() ) : ?>
+         <?php the_post_thumbnail(); ?>
+      <?php endif; ?>
+      <h3 class="entry-title">
+         <?php the_title(); ?>
+      </h3>
+      <?php the_excerpt(); ?>
+   </a>
 </div>

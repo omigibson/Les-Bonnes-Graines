@@ -1,17 +1,21 @@
 #header {
-display: flex;
-justify-content: space-between;
-align-items: baseline;
-font-family: "Amatic SC", serif;
-font-weight: 700;
-padding: .5rem 0;
-border-bottom: 3px solid #558C03;
+   display: flex;
+   justify-content: space-between;
+   align-items: baseline;
+   font-family: "Amatic SC", serif;
+   font-weight: 700;
+   padding: 0.5rem 0;
+   border-bottom: 3px solid #558C03;
+
    h1 {
-   font-size: 28px;
+      font-size: 2rem;
    }
+
    .menu ul {
       display: flex;
+
       li {
+         font-size: 1.25rem;
          padding-left: 1rem;
       }
    }
