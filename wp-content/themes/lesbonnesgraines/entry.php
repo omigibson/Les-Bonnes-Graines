@@ -1,12 +1,8 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
    <header>
-      <?php
-         echo '<h1 class="entry-title">';
-      ?>
-      <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" rel="bookmark"><?php the_title(); ?></a>
-      <?php
-         echo '</h1>';
-       ?>
+      <h1 class="entry-title">
+         <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" rel="bookmark"><?php the_title(); ?></a>
+      </h1>
    </header>
    <div class="entry-content">
       <?php if ( has_post_thumbnail() ) : ?>

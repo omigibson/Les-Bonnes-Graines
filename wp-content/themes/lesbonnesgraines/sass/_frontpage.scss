@@ -1,16 +1,37 @@
 .latest-courses {
-   display: flex;
    background-color: #D9C2AD;
    padding: 1rem;
    box-shadow: 6px 6px 40px #bbb;
+   @media screen and (min-width: 576px) {
+      display: flex;
+   }
 
    .entry-summary {
-      width: calc((100% - 2rem) / 3);
       padding: 0 0.5rem;
+      @media screen and (min-width: 576px) {
+         width: calc(100% / 3);
+      }
    }
 
    a:focus,
    a:hover {
       color: #558C03;
+   }
+
+   img {
+      height: 320px;
+      object-fit: cover;
+      @media screen and (min-width: 576px) {
+         height: 142px;
+      }
+      @media screen and (min-width: 768px) {
+         height: 192px;
+      }
+      @media screen and (min-width: 992px) {
+         height: 238px;
+      }
+      @media screen and (min-width: 1200px) {
+         height: 268px;
+      }
    }
 }

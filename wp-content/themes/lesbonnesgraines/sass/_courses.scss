@@ -1,12 +1,27 @@
 #courses {
-   display: flex;
-   justify-content: space-around;
-   article {
-      width: calc(100% / 3);
-      padding: 1rem;
+   .entry-summary {
+      display: flex;
+
       img {
-      width: 100%;
-      height: auto;
+         width: calc(100% / 3);
+         height: 320px;
+         object-fit: cover;
+         @media screen and (min-width: 576px) {
+            height: 142px;
+         }
+         @media screen and (min-width: 768px) {
+            height: 192px;
+         }
+         @media screen and (min-width: 992px) {
+            height: 238px;
+         }
+         @media screen and (min-width: 1200px) {
+            height: 268px;
+         }
+      }
+
+      .summary-text {
+         max-width: calc((100% / 3) * 2);
       }
    }
 }
