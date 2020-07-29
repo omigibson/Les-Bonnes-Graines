@@ -1,12 +1,18 @@
 #courses {
    .entry-summary {
-      display: flex;
+      display: block;
+      padding: 2.5rem 0;
+      border-bottom: 1px solid #3e5902;
+      @media screen and (min-width: 576px) {
+         display: flex;
+      }
 
       img {
-         width: calc(100% / 3);
          height: 320px;
          object-fit: cover;
+         // box-shadow: 6px 6px 40px #bbb;
          @media screen and (min-width: 576px) {
+            width: calc((100% - 1rem) / 3);
             height: 142px;
          }
          @media screen and (min-width: 768px) {
@@ -21,7 +27,9 @@
       }
 
       .summary-text {
-         max-width: calc((100% / 3) * 2);
+         max-width: calc((100% - 1rem) / 3 * 2);
+         padding: 1rem;
+         margin-left: 1rem;
       }
    }
 }
