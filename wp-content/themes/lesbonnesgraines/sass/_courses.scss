@@ -1,8 +1,8 @@
 #courses {
    .entry-summary {
-      display: block;
       padding: 2.5rem 0;
       border-bottom: 1px solid #3e5902;
+      border-radius: 0;
       @media screen and (min-width: 576px) {
          display: flex;
       }
@@ -24,6 +24,11 @@
          @media screen and (min-width: 1200px) {
             height: 268px;
          }
+      }
+
+      .course-date {
+         font-style: italic;
+         margin: 0.5rem 0;
       }
 
       .summary-text {

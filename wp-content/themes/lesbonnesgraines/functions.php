@@ -13,7 +13,7 @@ function lesbonnesgraines_setup() {
 add_action( 'wp_enqueue_scripts', 'lesbonnesgraines_load_scripts' );
 function lesbonnesgraines_load_scripts() {
    wp_enqueue_style( 'lesbonnesgraines-style', get_stylesheet_uri() );
-   wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Open+Sans:wght@400;700&display=swap', [], null );
+   wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap', [], null );
    wp_enqueue_script( 'jquery' );
 }
 add_action( 'wp_footer', 'lesbonnesgraines_footer_scripts' );
