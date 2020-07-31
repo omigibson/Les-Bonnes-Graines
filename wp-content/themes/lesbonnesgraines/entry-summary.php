@@ -7,8 +7,16 @@
          <h3 class="entry-title">
             <?php the_title(); ?>
          </h3>
-         <?php echo is_home() ? "<p class='course-date'>" . get_field("start_date") . " - " . get_field("end_date") . "</p>" : null ?>
-         <?php the_excerpt(); ?>
       </a>
+      <?php if (is_home() && get_field('start_date') ) : ?>
+         <p class="course-date">
+            <span><?php the_field("start_date") ?></span>
+         <?php if ( get_field("end_date") ) : ?>
+            <span> -  <?php the_field("end_date") ?></span>
+         <?php endif; ?>
+         </p>
+         <?php endif;
+         the_excerpt();
+      ?>
    </span>
 </div>
