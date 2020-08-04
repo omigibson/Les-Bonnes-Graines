@@ -1,7 +1,6 @@
 .latest-courses {
-   background-color: #D9C2AD;
-   padding: 1rem;
-   box-shadow: 6px 6px 40px #bbb;
+   @include content-box;
+   background-color: $brown;
    @media screen and (min-width: 576px) {
       display: flex;
    }
@@ -15,12 +14,13 @@
 
    a:focus,
    a:hover {
-      color: #558C03;
+      color: $green;
    }
 
    img {
       height: 320px;
       object-fit: cover;
+      margin-bottom: 0.5rem;
       @media screen and (min-width: 576px) {
          height: 142px;
       }

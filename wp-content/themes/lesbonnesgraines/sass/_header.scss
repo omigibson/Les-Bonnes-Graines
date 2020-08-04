@@ -2,10 +2,10 @@
    display: flex;
    justify-content: space-between;
    align-items: baseline;
-   font-family: "Amatic SC", serif;
+   font-family: $heading-font, serif;
    font-weight: 700;
    padding: 0.5rem 0;
-   border-bottom: 3px solid #558C03;
+   border-bottom: 3px solid $green;
 
    h1 {
       font-size: 2rem;

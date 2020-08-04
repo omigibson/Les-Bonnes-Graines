@@ -1,5 +1,5 @@
 .wp-block-column {
-   box-shadow: 6px 6px 40px #bbb;
+   box-shadow: $box-shadow;
 
    figure,
    img {
@@ -10,19 +10,6 @@
 }
 
 .text-column {
-   background-color: white;
+   background-color: $white;
    padding: 1rem;
-}
-
-.brown-box,
-.white-box {
-   background-color: #D9C2AD;
-   padding: 1rem;
-   border-radius: 10px;
-   box-shadow: 6px 6px 40px #bbb;
-   margin-bottom: 1.5rem;
-}
-
-.white-box {
-   background-color: white;
 }

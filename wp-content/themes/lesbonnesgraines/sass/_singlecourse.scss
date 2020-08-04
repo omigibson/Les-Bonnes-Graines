@@ -1,5 +1,40 @@
 #single-content {
-   .course-info {
+   .entry-title {
+      font-family: $heading-font;
+      font-size: 1.55rem;
+   }
+
+   .image-and-info {
       display: flex;
+      justify-content: space-between;
+      margin-bottom: 2rem;
+
+      img {
+         width: 60%;
+         max-height: 100vh;
+         object-fit: cover;
+         box-shadow: $box-shadow;
+      }
+
+      .course-info {
+         @include content-box;
+         width: 37%;
+         background-color: $brown;
+
+         ul {
+            list-style: disc;
+            padding-left: 2rem;
+            margin-bottom: 1.5rem;
+
+            li {
+               margin-bottom: 0.5rem;
+            }
+         }
+      }
+   }
+
+   .post-content {
+      @include content-box;
+      background-color: $white;
    }
 }

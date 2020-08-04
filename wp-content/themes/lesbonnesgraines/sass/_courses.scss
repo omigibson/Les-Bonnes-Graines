@@ -1,7 +1,7 @@
 #courses {
    .entry-summary {
       padding: 2.5rem 0;
-      border-bottom: 1px solid #3e5902;
+      border-bottom: 1px solid $dark-green;
       border-radius: 0;
       @media screen and (min-width: 576px) {
          display: flex;
@@ -10,7 +10,7 @@
       img {
          height: 320px;
          object-fit: cover;
-         // box-shadow: 6px 6px 40px #bbb;
+         // box-shadow: $box-shadow;
          @media screen and (min-width: 576px) {
             width: calc((100% - 1rem) / 3);
             height: 142px;
