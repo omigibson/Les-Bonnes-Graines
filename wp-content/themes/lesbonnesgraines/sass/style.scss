@@ -65,7 +65,7 @@ ul {
 }
 
 body {
-   max-width: 1366px;
+   max-width: 1200px;
    background-color: #f9f5f1;
    // line-height:1;
    font-family: $text-font, sans-serif;
@@ -253,6 +253,7 @@ section {
    clip: rect(1px, 1px, 1px, 1px);
    position: absolute !important;
 }
+@import "contact";
 @import "courses";
 @import "frontpage";
 @import "header";

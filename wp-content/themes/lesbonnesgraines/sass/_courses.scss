@@ -7,9 +7,8 @@
          display: flex;
       }
 
-      img {
+      .image-link {
          height: 320px;
-         object-fit: cover;
          // box-shadow: $box-shadow;
          @media screen and (min-width: 576px) {
             width: calc((100% - 1rem) / 3);
@@ -23,6 +22,17 @@
          }
          @media screen and (min-width: 1200px) {
             height: 268px;
+         }
+
+         &:hover {
+            + span > a {
+               color: $light-green;
+            }
+         }
+
+         img {
+            object-fit: cover;
+            height: 100%;
          }
       }
 

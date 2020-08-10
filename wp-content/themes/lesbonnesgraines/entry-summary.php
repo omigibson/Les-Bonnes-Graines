@@ -1,6 +1,8 @@
 <div class="entry-summary">
    <?php if ( has_post_thumbnail() ) : ?>
-      <?php the_post_thumbnail(); ?>
+      <a class="image-link" href="<?php the_permalink(); ?>">
+         <?php the_post_thumbnail(); ?>
+      </a>
    <?php endif; ?>
    <span class="summary-text">
       <a href="<?php the_permalink(); ?>">
