@@ -1,5 +1,10 @@
 .wp-block-column {
+   min-height: 220px;
+   margin-bottom: 1.5rem;
    box-shadow: $box-shadow;
+   @media screen and (min-width: 576px) {
+      margin-bottom: 0;
+   }
 
    figure,
    img {
